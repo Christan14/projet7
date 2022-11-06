@@ -1,70 +1,63 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CREE UN RESEAU SOCIAL D'ENTRPRISE (PROJET 7).
 
-## Available Scripts
+A brief description of what this project does and who it's for
 
-In the project directory, you can run:
+COMPETENCES EVALUEES.
 
-### `npm start`
+-Crée un stokage de données à l'aide de SQL.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Personaliser le contenu envoyé à un client web.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Implémenter un stockage  des données sécurisé en utilisant SQL.
 
-### `npm test`
+-Authentifier un utilisateur et mantenir sa  sessoin.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+INSTALLATION DE L'APPLICATION DE GROUPOMANIA.
 
-### `npm run build`
+BACKEND
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Le backend a été crée avec Node.js, Express.js, NOSQL comme base de données.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+INSTALLATION 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Crée les dossiers .ENV et IMAGS.
+Dans le /images crée 3 sous dossiers /posts, /profils, /user.
+Dans le /user ajouté une photo de votre choix en la mommant profil.jpg.
 
-### `npm run eject`
+-Dans le terminal de  VSCODE, situez-vous  dans le dossier /backend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Dans le dossier /backend demarrez NPM INSTALL pour installer toutes les dépendances du frontend.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Dans le  fichier .ENV, veuillez rentrer le host les identifiants de votre utilisateur admin et le mon de la base de données que vous  souhaitez crée.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Uploid le fichier users.json dans la collection user de la base de donnée crée sur Mongodb.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-Démarrer NPM START  pour lancer le projet.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+DEVELOPPEMENT SERVER
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Demarrer NODEMON SERVER pour avoir accès au serveur de développement. L'application va se recharger automatiquement si vous modifiez un fichier source.
 
-### Code Splitting
+FRONTEND 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Le frontend a été crée avec React.js
 
-### Analyzing the Bundle Size
+INSTALLATION
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Dans le dossier /frontend demarrez NPM INSTALL pour anstaller toutes les dépendances du frontend.
+Dans le dossier /frontend crée un dossier /images 
 
-### Making a Progressive Web App
+DEVELOPPEMENT SERVER
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Demarrer NPM START pour avoir accès au serveur de le développement. L'application va se recharger automatiquement si vous modifiez un fichier sauce.
 
-### Advanced Configuration
+DROITS ADMIN
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Identifiant : sasa@gmail.com
 
-### Deployment
+Pssword : 123456789Ae@
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

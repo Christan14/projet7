@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "633875e53990a597c90df393"
+  },
+  "pseudo": "Lab",
+  "email": "gato@gmail.com",
+  "password": "$2b$10$Sjhx9Q7cN1reEC7GCjhY0.l6upbmBAQiDzLCC0VPAYyD5G3eEdT32",
+  "picture": "http://localhost:5000images/user/profil.jpg",
+  "bio": "",
+  "likes": [],
+  "isAdmin": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1664644581467"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1664644581467"
+    }
+  },
+  "__v": 0
+}]

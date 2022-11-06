@@ -1,0 +1,52 @@
+img.picture-post {
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid #fd2d01;
+  border-radius: 50px;
+}
+
+.cadre {
+  border: 2px solid #fd2d01;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.align {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.svg-inline--fa {
+  color: #fd2d01;
+  cursor: pointer;
+}
+
+@media all and (max-width: 320px) {
+  img.picture-post {
+    max-width: 240px;
+  }
+}
+
+span.numbersOfLikes {
+  color: #fd2d01;
+  font-size: 2em;
+  font-weight: 900;
+  border: 2px solid #fd2d01;
+  padding: 0px 15px;
+  border-radius: 50px;
+}
+
+.umbers_liked {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 900;
+  background-color: #fd2d01;
+  border: 2px solid #fd2d01;
+  padding: 0px 15px;
+  border-radius: 50px;
+}
