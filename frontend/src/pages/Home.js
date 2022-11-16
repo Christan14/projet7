@@ -3,7 +3,7 @@ import Post from "../components/Post";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  let userAuth = JSON.parse(localStorage.getItem("userAuth"));
+  let userAuth = JSON.parse(sessionStorage.getItem("userAuth"));
 
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);

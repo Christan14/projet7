@@ -17,7 +17,7 @@ const Post = ({
   likers,
   time,
 }) => {
-  const userAuth = JSON.parse(localStorage.getItem("userAuth"));
+  const userAuth = JSON.parse(sessionStorage.getItem("userAuth"));
   let etat = "numbersOfLikes";
   if (userAuth) {
     etat = likers.includes(userAuth._id) ? "umbers_liked" : "numbersOfLikes"; 
