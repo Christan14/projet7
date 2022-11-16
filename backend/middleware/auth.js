@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
   const token = req.cookies.token;
   if (!token) {
     return res.status(401).json({
-      error: "You must log in",
+      error: "Vous devez vous connecter",
     });
   }
   try {
@@ -13,18 +13,18 @@ module.exports = (req, res, next) => {
     User.findById(decoded._id).then((user) => {
       if (!user) {
         return res.status(401).json({
-          error: "User not found",
+          error: "Utilisateur introuvable",
         });
       } else {
         if (
-          user._id.toString() === decoded._id || // if user is the owner of the post
-          decoded.isAdmin === true // user is admin
+          user._id.toString() === decoded._id || // si l'utilisateur est le propriétaire de la publication
+          decoded.isAdmin === true // l'utilisateur est administrateur
         ) {
-          // if user is admin or if user is the same as the one who sent the request
+           // si l'utilisateur est admin ou si l'utilisateur est le même que celui qui a envoyé la requête
           next();
         } else {
           return res.status(403).json({
-            message: "Forbidden",
+            message: "Interdit",
           });
         }
       }

@@ -62,7 +62,7 @@ const Home = () => {
           {userAuth ? (
             <div>
               <form onSubmit={postIn} encType="multipart/form-data">
-                <h1>The Wall</h1>
+                <h1>GROUPOMANIA</h1>
                 <div className="form-group row">
                   <label htmlFor="message" className="col-4 col-form-label">
                     Message

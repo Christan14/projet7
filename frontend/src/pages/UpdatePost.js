@@ -47,7 +47,7 @@ const UpdatePost = () => {
     })
       .then((data) => {
         console.log(data);
-        alert("Post succefully updated !!!");
+        alert("Poste mise à jour avec succé !!!");
         navigate("/");
       })
       .catch((err) => {

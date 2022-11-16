@@ -63,9 +63,9 @@ module.exports.signin = (req, res) => {
         return res
           .status(200)
           .cookie("token", token, {
-            maxAge: 9000000, // 1 day
-            httpOnly: false, // to avoid XSS
-            secure: false, // set to true if your using https
+            maxAge: 9000000, // 1 jour
+            httpOnly: false, //  pour évité XSS
+            secure: false, // défini sur vrai, si vous utilisez https
           })
           .json({
             message: "Login success",

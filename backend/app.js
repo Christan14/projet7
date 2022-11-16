@@ -13,7 +13,7 @@ const app = express();
 mongoose
   .connect(
     `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-shard-00-00.8ayts.mongodb.net:27017,cluster0-shard-00-01.8ayts.mongodb.net:27017,cluster0-shard-00-02.8ayts.mongodb.net:27017/${process.env.DB_DATA};?ssl=true&replicaSet=atlas-c813mu-shard-0&authSource=admin&retryWrites=true&w=majority`,
-    //"mongodb+srv://Marc:Marc@cluster0.8ayts.mongodb.net/Marc?retryWrites=true&w=majority",
+
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
@@ -24,16 +24,16 @@ mongoose
   });
 
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); // * means all origins
-  res.setHeader("Access-Control-Allow-Credentials", "true"); // allows cookies to be sent
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); // * signifie toutes les origines
+  res.setHeader("Access-Control-Allow-Credentials", "true"); // autorise l'envoi de cookies
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
-  ); // allows headers to be sent
+  );// autorise l'envoi des en-têtes
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET, POST, PUT, DELETE, PATCH, OPTIONS"
-  ); // allows methods to be sent
+  ); // permet d'envoyer des méthodes
   next();
 });
 
@@ -42,9 +42,9 @@ app.use(
     origin: "http://localhost:3000",
   })
 );
-app.use(express.json()); // for parsing application/json
-app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-app.use(cockiesPraser()); // for parsing cookies
+app.use(express.json()); // pour analyser application/json
+app.use(express.urlencoded({ extended: true })); // pour l'analyse de l'application/x-www-form-urlencoded
+app.use(cockiesPraser()); // pour analyser les cookies
 
 app.use("/images", express.static(path.join(__dirname, "images")));
 

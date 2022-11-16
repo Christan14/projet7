@@ -12,7 +12,6 @@ const Register = () => {
     fetch(`${process.env.REACT_APP_BASE_URL}api/auth/signup`, {
       method: "POST",
       withCredentials: true,
-      //credentials: "include",
       body: JSON.stringify({
         pseudo: pseudo,
         email: email,

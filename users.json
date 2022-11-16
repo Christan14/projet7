@@ -1,22 +1,44 @@
 [{
   "_id": {
-    "$oid": "633875e53990a597c90df393"
+    "$oid": "6367680fc092ccb4694bfca6"
   },
-  "pseudo": "Lab",
-  "email": "gato@gmail.com",
-  "password": "$2b$10$Sjhx9Q7cN1reEC7GCjhY0.l6upbmBAQiDzLCC0VPAYyD5G3eEdT32",
-  "picture": "http://localhost:5000images/user/profil.jpg",
-  "bio": "",
+  "pseudo": "jeff",
+  "email": "jeff@gmail.com",
+  "password": "$2b$10$hUdlMQkNiLiiQ7A7pAE8MOtyTfG4XtXskGO.lTxmvL2GV5IY9k/g6",
+  "picture": "http://localhost:5000/images/profils/hacker-vole-un-million-dollars-NFT-Bored-Ape-Yacht-Club-singes-piratage-Instagram.jpg1667723060592.jpeg",
+  "bio": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
   "likes": [],
-  "isAdmin": true,
+  "isAdmin": false,
   "createdAt": {
     "$date": {
-      "$numberLong": "1664644581467"
+      "$numberLong": "1667721231239"
     }
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1664644581467"
+      "$numberLong": "1667723060594"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636775291cf2ec2adb735405"
+  },
+  "pseudo": "sasa",
+  "email": "sasa@gmail.com",
+  "password": "$2b$10$gMp7GCJglhuWE1lXui8DLO8fHJPrTnmlt1VCosAzLnmwlcx3V45QW",
+  "picture": "http://localhost:5000/images/profils/Des-NFT-de-singes-de-dessins-animes-se-vendent-244.png1667724643849.png",
+  "bio": "l'homme de la foret",
+  "likes": [],
+  "isAdmin": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667724585194"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667724643857"
     }
   },
   "__v": 0

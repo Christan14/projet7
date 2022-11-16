@@ -25,7 +25,6 @@ const UpdateProfil = () => {
     fetch(`${process.env.REACT_APP_BASE_URL}api/auth/profil/${userAuth._id}`, {
       method: "GET",
       withCredentials: true,
-      //credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -70,19 +69,18 @@ const UpdateProfil = () => {
       body: formData,
       credentials: "include",
       withCredentials: true,
-      //credentials: "include",
     })
       .then((data) => {
         if (userAuth._id === idUser || adminIn.isAdminAuth) {
           console.log(data);
-          alert("User succefully updated !!!");
+          alert("Utilisateur mis à jour avec succès !!!");
           if (adminIn.isAdmin) {
             navigate(`/profils`);
           } else {
             navigate(`/profil`);
           }
         } else {
-          alert("You are not allowed to update this user !!!");
+          alert("Vous n'êtes pas autorisé à mettre à jour cet utilisateur !!!");
           navigate(`/profils`);
         }
       })

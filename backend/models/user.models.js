@@ -42,7 +42,7 @@ const UserSchema = new mongoose.Schema(
       default: false,
     },
   },
-  { timestamps: true }
+  { timestamps: true } // le schema est pris en charge
 );
 
 UserSchema.plugin(validator, { message: "is already taken" });

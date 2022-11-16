@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import logo from "../icon-left-font.png";
 
 const Nav = () => {
-  let userAuth = JSON.parse(localStorage.getItem("userAuth"));
+  let userAuth = JSON.parse(localStorage.getItem("userAuth")); //je recupere le userAuth dans le localStorage
   const logout = () => {
     fetch(`${process.env.REACT_APP_BASE_URL}api/auth/logout`, {
       method: "GET",
       withCredentials: true,
-      //credentials: "include",
       headers: {
         "content-type": "application/json",
       },

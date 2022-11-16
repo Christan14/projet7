@@ -20,10 +20,10 @@ const Post = ({
   const userAuth = JSON.parse(localStorage.getItem("userAuth"));
   let etat = "numbersOfLikes";
   if (userAuth) {
-    etat = likers.includes(userAuth._id) ? "umbers_liked" : "numbersOfLikes";
+    etat = likers.includes(userAuth._id) ? "umbers_liked" : "numbersOfLikes"; 
   }
 
-  const [isLiked, setIsLiked] = useState(likers.length);
+  const [isLiked, setIsLiked] = useState(likers.length); // il est mis a jour
   const [isAdmin, setIsAdmin] = useState(false);
   const [numberLiked, setNumberLiked] = useState(etat);
 
@@ -101,7 +101,7 @@ const Post = ({
     e.preventDefault();
     fetch(`${process.env.REACT_APP_BASE_URL}api/posts/like/${idPost}`, {
       method: "PATCH",
-      body: JSON.stringify({ likerId: userAuth._id }),
+      body: JSON.stringify({ likerId: userAuth._id }), //je transmet le userAuth._id dans le json
       withCredentials: true,
       credentials: "include",
       headers: {
@@ -110,8 +110,6 @@ const Post = ({
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        alert("You liked this post");
         setIsLiked(data.length);
         setNumberLiked("umbers_liked");
         navigate("/");
@@ -133,8 +131,6 @@ const Post = ({
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        alert("You unLiked this post");
         setIsLiked(data.length);
         setNumberLiked("numbersOfLikes");
         navigate("/");

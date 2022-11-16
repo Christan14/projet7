@@ -1,7 +1,4 @@
-
 CREE UN RESEAU SOCIAL D'ENTRPRISE (PROJET 7).
-
-A brief description of what this project does and who it's for
 
 COMPETENCES EVALUEES.
 
@@ -22,8 +19,11 @@ Le backend a été crée avec Node.js, Express.js, NOSQL comme base de données.
 INSTALLATION 
 
 -Crée les dossiers .ENV et IMAGS.
+Dans le .env , il faut mettre votre propre uri
 Dans le /images crée 3 sous dossiers /posts, /profils, /user.
 Dans le /user ajouté une photo de votre choix en la mommant profil.jpg.
+
+-Il faut crée son propre JWT_SECRET
 
 -Dans le terminal de  VSCODE, situez-vous  dans le dossier /backend.
 
@@ -57,7 +57,7 @@ DROITS ADMIN
 
 Identifiant : sasa@gmail.com
 
-Pssword : 123456789Ae@
+Pssword : 123456789Az@
 
 
 
