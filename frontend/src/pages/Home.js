@@ -119,20 +119,7 @@ const Home = () => {
               ))}
             </div>
           ) : (
-            <div>
-              <h1>The Wall</h1>
-              {posts.map((post) => (
-                <Post
-                  key={post._id}
-                  posterId={post.posterId}
-                  message={post.message}
-                  picture={post.picture}
-                  comments={post.comments}
-                  likers={post.likers}
-                  time={post.createdAt}
-                />
-              ))}
-            </div>
+            navigate("/login")
           )}
         </div>
       </div>
